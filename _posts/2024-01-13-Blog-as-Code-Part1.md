@@ -5,11 +5,11 @@ categories: ['site','blog-as-code']
 tags: ['blog-as-code','jekyll','chirpy','github pages']
 author: owen
 image:
-  path: /assets/articles/2024-01-13-chirpystarter.png
+  path: assets/headers/2024-01-13-blog-as-code.webp
   alt: Blog-as-Code
 ---
 
-Before I jump into writing about my Home Server environment, I thought I would do a bit of a write up on how I created (and will maintain) this site. Using a technique I'm calling "Blog-as-Code". To achieve this I use a number of awesome tools and projects to manage, generate, and host this site (for FREE 😍).
+Before I jump into writing about my Home Server environment, I thought I would write about how I created (and will maintain) this site. Using a technique I'm calling "Blog-as-Code". To achieve this I use a number of awesome tools and projects to manage, generate, and host this site (for FREE 😍).
 
 > I write these articles in a follow along style, so that hopefully you can create or re-use aspects of what I write about in your own environment.
 {: .prompt-info }
@@ -18,50 +18,49 @@ So lets break down the different components:
 
 * [**Jekyll**](https://jekyllrb.com/) is a static site generator that transforms plain text into beautiful static websites and blogs, and is the foundation of our "blog-as-code" approach. Turning the [markdown](https://www.markdownguide.org/) files we use to write articles, into webpages like you're reading now.
 
-* [**Chirpy**](https://chirpy.cotes.page/) an awesome text-focused theme for Jekyll created by [Cotes Chung](https://github.com/cotes2020). Or more specifically his amazing [Chirpy Starter](https://github.com/cotes2020/chirpy-starter) template that automates the creation and updates of our site going forward using [GitHub Actions](https://docs.github.com/en/actions) our first foray into the CI/CD world using GitHub.
+* [**Chirpy**](https://chirpy.cotes.page/) an awesome text-focused theme for Jekyll created by [Cotes Chung](https://github.com/cotes2020). Or more specifically his amazing [Chirpy Starter template](https://github.com/cotes2020/chirpy-starter) that automates the creation and updates of our site going forward using [GitHub Actions](https://docs.github.com/en/actions) our first foray into CI/CD using GitHub.
 
-* [**GitHub Pages**](https://pages.github.com/) and an underlying Github repo we will use to store and host everything related to our site.
+* [**GitHub Pages**](https://pages.github.com/) and an underlying Github repo will be use to store and host everything related to our site.
 
-* [**Giscus**](https://giscus.app/) is a comments system powered by [GitHub Discussions](https://docs.github.com/en/discussions), that allows visitors to leave comments and reactions to aritcles (all stored in our same GitHub repo!)
+* [**Giscus**](https://giscus.app/) is a comments system powered by [GitHub Discussions](https://docs.github.com/en/discussions), that allows visitors to leave comments and reactions to articles (all stored in our same GitHub repo!)
 
-Okay so there's a few moving parts, but don't stress thanks to [Cotes](https://github.com/cotes2020) we will be up and running pretty quickly, and only have to edit a few files to get use started.
+Okay so there's a few moving parts, but don't stress thanks to [Cotes](https://github.com/cotes2020) we will be up and running quickly, and only have to edit a few files to get started.
 
-So let's being creating our "Blog-as-Code" site.
+So let's start creating our "Blog-as-Code" site.
 
 # STEP 1: Chirpy Starter
 
-To quickly get things up and running we are going to use the awesome (I have to say it again!) [Chirpy Starter](https://github.com/cotes2020/chirpy-starter) template. This will automagically create a new GitHub repo based on the Chirpy Starter template.
+To quickly get things up and running we are going to use the awesome (I have to say it again!) [Chirpy Starter template](https://github.com/cotes2020/chirpy-starter). This will automagically create a new GitHub repo based on the Chirpy Starter template.
 
 > So before you start make sure you have your own GitHub account setup
 {: .prompt-tip }
 
-This tempalte includes everything will need (Jekyll, Chirpy theme, GitHub Action etc).
+This tempalte includes everything we will need (Jekyll, Chirpy theme, GitHub Action etc).
 
 1. Sign in to GitHub, and browse to [Chirpy Starter](https://github.com/cotes2020/chirpy-starter/generate).
 
 2. Click <kbd>Use this template</kbd> > <kbd>Create a new repository</kbd>, in the top right
 
-    ![Chirpy Starter Template](/assets/articles/2024-01-13-chirpystarter.png)
-    _Creating a new GitHub repo using the Chirpy Starter template
+![Chirpy Starter Template](/assets/articles/2024-01-13-chirpystarter.png)
+_Creating a new GitHub repo using the Chirpy Starter template_
 
 3. Name the new repo `USERNAME.github.io`, where `USERNAME` represents our GitHub username.
 
-4. We are going to set the access permissions to **Public** as we are going to hose our site using GitHub Pages.
+4. We will set the access permissions to **Public** as we are going to hose our site using GitHub Pages.
 
 > GitHub Pages is available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see "GitHub’s plans."
 {: .prompt-info }
 
 4. Click <kbd>Create repository</kbd>
 
+We now have the basis of our "Blog-as-Code" site, ready to go and can move on personalising it.
 
 > For more information about Chirpy Starter template, checkout the doc's [here](https://github.com/cotes2020/chirpy-starter?tab=readme-ov-file)
 {: .prompt-info }
 
-We now have the basis of our "Blog-as-Code" site.
-
 # STEP 2: Configure it
 
-Before we jump into updating the content of our site. We need to update several files that control the sites configuration.
+Before we jump into creating and updating content to our site. We need to modify several files that control the configuration of the site.
 
 These files are:
 
@@ -69,7 +68,7 @@ These files are:
 * **/_data/contact.yml** - manages the contact options displayed at the bottom of the sidebar
 * **/_data/share.yml** - manages what platforms visitors can share our articles to
 
-> I use VSCode for the Web (http://vscode.dev) as my IDE to work on GitHub repo's. You can use VSCode for the Web from any modern web browser, to easily access your GitHub repos to bulk edit files and commit changes back to your repo. Check out this quick intro video to [VSCode for the Web](https://www.youtube.com/watch?v=hdNipVZK53A)
+> I use [VSCode for the Web](http://vscode.dev) as my IDE to work on GitHub repo's. You can use VSCode for the Web from any modern web browser, to easily access your GitHub repos to bulk edit files and commit changes back to your repo. Check out this quick intro video to [VSCode for the Web](https://www.youtube.com/watch?v=hdNipVZK53A)
 {: .prompt-tip }
 
 ## _config.yml
@@ -155,7 +154,7 @@ platforms:
 
 # Personalise It
 
-So we've configured our site, now its time to add our own personal falvour. Okay okay we already personalised it a bit in the previous step (I know 😁). 
+So we've configured our site, now its time to add our own personal flavour. Okay, okay, we already personalised it a bit in the previous step (I know 😁). 
 
 Now we are going to actually update the sites content, and add our own imagery. To do this we are going to do the following
 
@@ -170,9 +169,9 @@ So our site needs an Avatar (or Hero Image) to give it some identity. How you ch
 >Make sure your avatar image is a 512 x 512 (1:1 ratio) so it displays correctly. This will also help with the next step where we use this to also create our favicons.
 {: .prompt-tip }
 
-*I used a bit of Microsoft CoPilot prompt magic to generate my own Avatar when I started the 'O so techie' journey. I use this across my site, GitHub account, and as such will be referencing my GitHub Account Avatar URL for this step.*
+*I used a bit of Microsoft CoPilot prompt magic to generate my own Avatar when I started the 'O so techie' journey. I use this across this site, GitHub account, and other socials. And as such will be referencing my GitHub Account Avatar URL to keep everything in sync.*
 
-If you aren't linking to your Avatar image to your GitHub account or another Social platform. I would suggest uploading the image to '/assets/avatar.png' for example so you can easily reference it.
+If you aren't linking your Avatar image to your GitHub account or another Social platform. I would suggest uploading the image to '/assets/avatar.png' for example so you can easily reference it.
 
 Now we have our Avatar its time to update our site details, for this we will update the */_config.yml*:
 
@@ -186,7 +185,7 @@ avatar: https://avatars.githubusercontent.com/u/34251619?s=400&u=4569cab1b4280e3
 
 ## Create our own Favicons
 
-Okay so when I first did this I missed this step, and wondered why when I shared my site with others, or looked at the browsers tab icon for my site it was a default chirpy icon.
+Okay so when I first set this all up, I missed this step, and wondered why when I shared my site with others, or looked at the browsers tab icon for my site it was the default chirpy icon.
 
 Well it turns out we have to generate our own Favicons, thankfully this is not as hard as it sounds, and we can use our Avatar as the source image.
 
@@ -197,8 +196,8 @@ To make this whole process easier we are going to use this handy tool [Real Favi
 
 1. Browse to [Real Favicon Generator](https://realfavicongenerator.net/)
 
-        ![Real Favicon Generator](/assets/articles/2024-01-13-realfavicongenerator.png)
-        _Create your Favicons using Real Favicon Generator
+![Real Favicon Generator](/assets/articles/2024-01-13-realfavicongenerator.png)
+_Create your Favicons using Real Favicon Generator_
 
 2. Click <kbd>Select your Favicon image</kbd> to upload your image
 
@@ -253,7 +252,7 @@ The following is just some of the wide range of topics I hope to discuss and cov
 
 # STEP 3 - Enable GitHub Pages
 
-Before we close out this first part of our "blog-as-code" series, we will enable GitHub Pages and the GitHub Action so Jekyll can automatically generate the static site content GitHub Pages will present our visitors.
+Before we close out Part 1 of our "blog-as-code" series, we will enable GitHub Pages and the GitHub Action so Jekyll can automatically generate the static site content that GitHub Pages will then present our visitors.
 
 >I'm not sure if this was just an issue for me, but when I ran through this process GitHub Pages was not properly enabled on my repo. So I had to do the below to enable it.
 {: .prompt-info }
@@ -266,3 +265,8 @@ Before we close out this first part of our "blog-as-code" series, we will enable
 
 Now when we commit changes to our repo, the GitHub Action will automatically run and re-generate our site content. If the action fails for any reason (like it did for me, because nothing works the first time right 😉) you can check out the logs under the Actions tab in your GitHub repo.
 
+And now if you got this far, you should be able to browse to your very own "blog-as-code" site on GitHub Pages, using the following address format:
+
+- `https://USERNAME.github.io`, where `USERNAME` represents our GitHub username. (e.g. https://osotechie.github.io)
+
+![O so techie site](/assets/articles/2024-01-13-osotechisite.png)
