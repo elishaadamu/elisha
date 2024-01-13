@@ -68,7 +68,7 @@ These files are:
 * **/_data/contact.yml** - manages the contact options displayed at the bottom of the sidebar
 * **/_data/share.yml** - manages what platforms visitors can share our articles to
 
-> I use [VSCode for the Web](http://vscode.dev) as my IDE to work on GitHub repo's. You can use VSCode for the Web from any modern web browser, to easily access your GitHub repos to bulk edit files and commit changes back to your repo. Check out this quick intro video to [VSCode for the Web](https://www.youtube.com/watch?v=hdNipVZK53A)
+> I use [VSCode for the Web](https://vscode.dev) as my IDE to work on GitHub repo's. You can use VSCode for the Web from any modern web browser, to easily access your GitHub repos to bulk edit files and commit changes back to your repo. Check out this quick intro video to [VSCode for the Web](https://www.youtube.com/watch?v=hdNipVZK53A)
 {: .prompt-tip }
 
 ## _config.yml
