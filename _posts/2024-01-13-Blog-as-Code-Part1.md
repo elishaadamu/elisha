@@ -1,4 +1,4 @@
-F*---
+---
 title: Blog-as-Code - Meet Jekyll, Chirpy and friends (Part 1)
 date: 2024-01-13
 categories: ['site','blog-as-code']
