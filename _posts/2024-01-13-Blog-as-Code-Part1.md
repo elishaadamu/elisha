@@ -1,4 +1,4 @@
----
+F*---
 title: Blog-as-Code - Meet Jekyll, Chirpy and friends (Part 1)
 date: 2024-01-13
 categories: ['site','blog-as-code']
@@ -64,9 +64,9 @@ Before we jump into creating and updating content to our site. We need to modify
 
 These files are:
 
-* **/_config.yml** - the main configuration file for our Chirpy theme'd Jekyll site
-* **/_data/contact.yml** - manages the contact options displayed at the bottom of the sidebar
-* **/_data/share.yml** - manages what platforms visitors can share our articles to
+* `/_config.yml` - the main configuration file for our Chirpy theme'd Jekyll site
+* `/_data/contact.yml` - manages the contact options displayed at the bottom of the sidebar
+* `/_data/share.yml` - manages what platforms visitors can share our articles to
 
 > I use [VSCode for the Web](https://vscode.dev) as my IDE to work on GitHub repo's. You can use VSCode for the Web from any modern web browser, to easily access your GitHub repos to bulk edit files and commit changes back to your repo. Check out this quick intro video to [VSCode for the Web](https://www.youtube.com/watch?v=hdNipVZK53A)
 {: .prompt-tip }
@@ -80,7 +80,7 @@ This is the main configuration file for the site. This has a number of variables
 >2. We can use the same '#' pre-fix to comment / uncomment lines we don't wan't to use / include in our configuration (e.g. social links). This is a better approach then simply deleting options from the file, as we may want to use them in the future.
 {: .prompt-tip }
 
-The following is an extract of my */_config.yml* file from my setup:
+The following is an extract of my `/_config.yml` file from my setup:
 
 ```yaml
 lang: en
@@ -111,7 +111,7 @@ social:
 
 This file controls which contact options are displayed at the bottom of the left sidebar of our site. 
 
-The following is an example of my */_data/contact.yml* file from my setup:
+The following is an example of my `/_data/contact.yml` file from my setup:
 
 ```yaml
 - type: github
@@ -134,7 +134,7 @@ The following is an example of my */_data/contact.yml* file from my setup:
 
 This file controls what platforms visitors can share your articles to. 
 
-The following is an example of my */_data/contact.yml* file from my setup:
+The following is an example of my `/_data/contact.yml` file from my setup:
 
 ```yaml
 platforms:
@@ -173,7 +173,7 @@ So our site needs an Avatar (or Hero Image) to give it some identity. How you ch
 
 If you aren't linking your Avatar image to your GitHub account or another Social platform. I would suggest uploading the image to '/assets/avatar.png' for example so you can easily reference it.
 
-Now we have our Avatar its time to update our site details, for this we will update the */_config.yml*:
+Now we have our Avatar its time to update our site details, for this we will update the `/_config.yml`:
 
 ```yaml
 avatar: https://avatars.githubusercontent.com/u/34251619?s=400&u=4569cab1b4280e33839357542cf31b8bbc19b2fc&v=4
@@ -212,16 +212,16 @@ _Create your Favicons using Real Favicon Generator_
     - `browserconfig.xml`{: .filepath}
     - `site.webmanifest`{: .filepath}
 
-7. Upload the remaining files to our GitHub repo to replace the original files in the direcotry '/assets/img/favicons/' (if the directory doesn't exist just create it).
+7. Upload the remaining files to our GitHub repo to replace the original files in the direcotry `/assets/img/favicons/` (if the directory doesn't exist just create it).
 
 ## Tell them About our site
 
-Lets tell people a little about ourselves and our site. To do this we are going to start writting our first markdown. As the about page content is stored in its own markdown file */_tabs/about.md*.
+Lets tell people a little about ourselves and our site. To do this we are going to start writting our first markdown. As the about page content is stored in its own markdown file `/_tabs/about.md`.
 
 >Want to learn the basics of writting mardown, check out the markdown guide [here](https://www.markdownguide.org/).
 {: .prompt-tip }
 
-The following is an example of my */_tab/about.md* file from my setup:
+The following is an example of my `/_tab/about.md` file from my setup:
 
 ```markdown
 ---
@@ -257,16 +257,16 @@ Before we close out Part 1 of our "blog-as-code" series, we will enable GitHub P
 >I'm not sure if this was just an issue for me, but when I ran through this process GitHub Pages was not properly enabled on my repo. So I had to do the below to enable it.
 {: .prompt-info }
 
-1. Open our GitHub Repo Settings
+1. Open our GitHub Repo `Settings`
 
-2. Select *Pages* from the settings page
+2. Select `Pages` from the settings page
 
-3. Change the Build and Deploy *Source* to *GitHub Actions*
+3. Change the Build and Deploy `Source` to `GitHub Actions`
 
 Now when we commit changes to our repo, the GitHub Action will automatically run and re-generate our site content. If the action fails for any reason (like it did for me, because nothing works the first time right 😉) you can check out the logs under the Actions tab in your GitHub repo.
 
 And now if you got this far, you should be able to browse to your very own "blog-as-code" site on GitHub Pages, using the following address format:
 
-- `https://USERNAME.github.io`, where `USERNAME` represents our GitHub username. (e.g. https://osotechie.github.io)
+- `https://USERNAME.github.io`, where `USERNAME` represents our GitHub username.
 
 ![O so techie site](/assets/articles/2024-01-13-osotechisite.png)
