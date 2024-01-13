@@ -1,6 +1,6 @@
 ---
 title: Blog-as-Code - Meet Jekyll, Chirpy and friends (Part 1)
-date: 2024-01-14
+date: 2024-01-13
 categories: ['site','blog-as-code']
 tags: ['blog-as-code','jekyll','chirpy','github pages']
 author: owen
