@@ -5,7 +5,7 @@ author: owen
 image:
   path: assets/headers/2024-01-13-blog-as-code.webp
   alt: Blog-as-Code
-publish: false
+hidden: true
 mermaid: true
 ---
 
