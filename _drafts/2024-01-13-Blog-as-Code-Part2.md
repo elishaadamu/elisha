@@ -13,8 +13,10 @@ Welcome to Part 2 of the "Blog-as-Code" series. As a recap in the [previous post
 
 Today we are going to focus on the day-to-day aspect of how we will draft / publish new posts, and what I've learnt along the way that might make things easier for you (certainly has helped me).
 
->But first I think its important you are familiar with the basics of [writing a new post](https://chirpy.cotes.page/posts/write-a-new-post/). And instead of me reguritating already great documentation I think you should checkout Chirpy's documentation and come back here.{: .prompt-tip }
+>But first I think its important you are familiar with the basics of [writing a new post](https://chirpy.cotes.page/posts/write-a-new-post/). And instead of me reguritating already great documentation, I think you should checkout Chirpy's documentation and come back here
+{: .prompt-tip }
 
+# Visual Studio Code (VSCode)
 Now before we dive into the process for drafting and then publishing a post. I wanted to expand on the tooling (IDE) I mentioned in Part 1. So for the most part I use [VSCode for the Web](https://vscode.dev) to work with my GitHub repo / projects. And to help make things even easier I also use / recommend the following Extensions:
 
 {% include_relative common/vscode-extensions.md %}
