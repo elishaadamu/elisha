@@ -1,11 +1,10 @@
 ---
 title: Blog-as-Code - Meet Jekyll, Chirpy and friends (Part 2)
-date: 2024-01-16
+date: 9999-01-01
 author: owen
 image:
   path: assets/headers/2024-01-13-blog-as-code.webp
   alt: Blog-as-Code
-hidden: true
 mermaid: true
 ---
 

@@ -13,4 +13,5 @@ These extensions work with Universal only
 * [https://marketplace.visualstudio.com/items?itemName=keesschollaart.vscode-home-assistant](https://marketplace.visualstudio.com/items?itemName=keesschollaart.vscode-home-assistant) - extension to help Home Assistant users when writing YAML for configs, scripts and automations, by pulling live data about your Home Assistance instance.
 * [Material Design Icons Intellisence](https://marketplace.visualstudio.com/items?itemName=lukas-tr.materialdesignicons-intellisense) - heplful extension to see the different MDI icons, especially helpful when working on Home Assistant YAML files.
 
->I will endeavour to keep this list current with all the latest VSCode Extensions I am using, please feel free to suggest other extensions you think might be helpful [here](https://github.com/osotechie/osotechie.github.io/discussions/4).{: .prompt-tip }
+>I will endeavour to keep this list current with all the latest VSCode Extensions I am using, please feel free to suggest other extensions you think might be helpful [here](https://github.com/osotechie/osotechie.github.io/discussions/4)
+.{: .prompt-tip }
