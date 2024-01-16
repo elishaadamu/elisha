@@ -5,7 +5,7 @@ author: owen
 image:
   path: assets/headers/2024-01-13-blog-as-code.webp
   alt: Blog-as-Code
-hidden: true
+publish: false
 mermaid: true
 ---
 
@@ -26,6 +26,7 @@ Now before we dive into the process for drafting and then publishing a post. I w
     - https://chirpy.cotes.page/posts/write-a-new-post/
 1. New Post Workflow
 2. Advanced Post Feautes
+  - linking to other posts
   - mermaid diagrams
   - includes
 3. Add Commenting Support
