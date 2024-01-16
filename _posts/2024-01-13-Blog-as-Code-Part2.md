@@ -9,7 +9,7 @@ hidden: true
 mermaid: true
 ---
 
-Welcome to Part 2 of the "Blog-as-Code" series. As a recap in the [previous post](Blog-as-Code-Part1), we got the foundation of our site up and running with a bit of our personal flavour applied.
+Welcome to Part 2 of the "Blog-as-Code" series. As a recap in the [previous post]({% link 2024-01-13-Blog-as-Code-Part1.md %})), we got the foundation of our site up and running with a bit of our personal flavour applied.
 
 Today we are going to focus on the day-to-day aspect of how we will draft / publish new posts, and what I've learnt along the way that might make things easier for you (certainly has helped me).
 
