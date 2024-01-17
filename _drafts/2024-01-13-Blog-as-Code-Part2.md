@@ -8,7 +8,7 @@ image:
 mermaid: true
 ---
 
-This is a test using local SSH
+OMG So it was an issue with the devcontainer.json file
 
 Welcome to Part 2 of the "Blog-as-Code" series. As a recap in the [previous post]({% link _posts/2024-01-13-Blog-as-Code-Part1.md %})), we got the foundation of our site up and running with a bit of our personal flavour applied.
 
