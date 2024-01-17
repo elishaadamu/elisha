@@ -74,10 +74,13 @@ I am going to save you some time and provide a working example of the ```devcont
 ```
 {: file="/.devcontainer/devcontainer.json" }
 
-Okay so lets breakdown the above file and talk about a few things I have learnt, or issues to avoid.
+Okay so lets breakdown the contents of the above file a describe what each setting is:
 
-- ```"image": ``` defines the base docker image our dev container will be built from. This image includes everything we need to generate (and preview) our Jekyll based site.
-- ```"customizations": { "vscode": { "extensions": [ ]	}``` defines the list of VSCode Extensions we want to add to our IDE inside the container. I have provided a list of several useful extensions I like to use.
+- ```"image": ``` defines the base docker image our dev container is built from. The image in the above examaple includes everything we need to generate (and preview) our Jekyll based site.
+- ```"customizations": { "vscode": { "extensions": [ ]	}``` defines a list of VSCode Extensions we want to add to our IDE inside the container. I have provided a list of several useful extensions I like to use 
+
+> For more VSCode Extensions, check out my own curated list of extensions [here]( {% link _drafts/common/vscode-extensions.md %}), or browse the [VSCode Extensions Marketplace](https://marketplace.visualstudio.com/) for even more extensions.
+{: .prompt-tip }
 
 - ```"postStartCommand": ``` defines commands to run once the container is started. In the above example the command is set so Jekyll generates and hosts a copy of our site.
 
