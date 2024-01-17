@@ -12,7 +12,7 @@
 	// "forwardPorts": [],
 
 	// Uncomment the next line to run commands after the container is created.
-	"postCreateCommand": "bundle exec jekyll server --livereload --draft --incremental --force-polling"
+	"postCreateCommand": "bundle exec jekyll server --livereload --draft --incremental --force-polling",
 
 	// Configure tool-specific properties.
 	"customizations": {
