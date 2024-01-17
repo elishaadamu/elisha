@@ -52,7 +52,7 @@ I am going to save you some time and provide a working example of the ```devcont
 
 ```json
 {
-	"name": "DEV.Container - Osotechie site",
+	"name": "Osotechie.com site",
 	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
 
 	"customizations": {
