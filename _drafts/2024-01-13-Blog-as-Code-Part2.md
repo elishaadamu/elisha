@@ -41,11 +41,11 @@ Okay so with that out of the way lets run through the high-level flow for creati
 ```mermaid
 flowchart LR
 subgraph draft [DRAFT PHASE]
-  D1(Create New Post)-->D2("Add Front Matter (DRAFT)")-->D3(Working on Draft) -->D4(Commit Changes)
+  D1(Create Draft Post)-->D2("Add Front Matter")-->D3(Working on Draft) -->D4(Commit Changes)
   D3<-.Repeat .->D4
 end
 subgraph publish [PUBLISH PHASE]
-  P1("Update Front Matter (PUBLISH)") -->P2(Commit Changes)
+  P1("Move Post") -->P2(Commit Changes)
 end
 D4-->P1
 
