@@ -95,8 +95,17 @@ Okay so lets breakdown the above file and talk about a few things I have learnt,
 
 ### Starting our Dev Container
 
+1. Open VSCode
+2. Clone Repo
+3. Reopen in Container
+	
+	![Alt text](reopenincontainer.png)
 
+4. 
 
+5. 
+
+![Alt text](image.png)
 
 
 # WORK IN PROGRESS
