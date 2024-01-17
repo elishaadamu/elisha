@@ -12,7 +12,7 @@
 	// "forwardPorts": [],
 
 	// Uncomment the next line to run commands after the container is created.
-	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+	// "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
 	"postAttachCommand": "bundle exec jekyll server --livereload --draft --incremental --force-polling",
 
 	// Configure tool-specific properties.
@@ -26,8 +26,8 @@
 				"davidanson.vscode-markdownlin"
 			]
 		}
-	}
+	},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"remoteUser": "root"
 }
