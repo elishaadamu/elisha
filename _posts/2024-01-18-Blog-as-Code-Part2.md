@@ -10,7 +10,7 @@ image:
 mermaid: true
 ---
 
-Welcome to Part 2 of the "Blog-as-Code" series. As a recap in the [previous post]({% link _posts/2024-01-13-Blog-as-Code-Part1.md %})), we got the foundation of our site up and running.
+Welcome to Part 2 of the "Blog-as-Code" series. As a recap in the [previous post]({% link _posts/2024-01-13-Blog-as-Code-Part1.md %}), we got the foundation of our site up and running.
 
 Today we are going to focus on the day-to-day aspect of how we "develop" our site, and what I've learnt along the way that might make things easier for you *(I may have spent the last few days down some rabbit holes trying different things).*
 
