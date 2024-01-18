@@ -77,7 +77,7 @@ Okay so lets breakdown the contents of the above file and describe what each set
 - ```"image": ``` defines the base docker image our dev container is built from. The image in the above example includes everything we need to generate (and preview) our Jekyll based site.
 - ```"customizations": { "vscode": { "extensions": [ ]	}``` defines a list of VSCode Extensions we want to add to our IDE inside the container. I have provided a list of several useful extensions I like to use.
 
-	> For more VSCode Extensions, check out my own curated list of extensions [here]( {% link _drafts/common/vscode-extensions.md %}), or browse the [VSCode Extensions Marketplace](https://marketplace.visualstudio.com/) for even more extensions.
+	> For more VSCode Extensions, browse the [VSCode Extensions Marketplace](https://marketplace.visualstudio.com/).
 	{: .prompt-tip }
 
 - ```"postStartCommand": ``` defines commands to run once the container has started. In the above example the command is set so Jekyll generates and hosts a copy of our site.
