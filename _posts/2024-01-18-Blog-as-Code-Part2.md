@@ -1,6 +1,8 @@
 ---
 title: Blog-as-Code - Dev Containers (Part 2)
 date: 2024-01-18
+categories: ['site','blog-as-code','dev containers']
+tags: ['blog-as-code','jekyll','chirpy','github pages','vscode','dev containers','github codespaces']
 author: owen
 image:
   path: assets/headers/2024-01-18-blog-as-code-part2.webp
