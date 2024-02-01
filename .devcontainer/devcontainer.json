@@ -19,7 +19,11 @@
 				"vscode-icons-team.vscode-icons",
 				"bierner.markdown-mermaid",
 				"GitHub.vscode-github-actions",
-				"davidanson.vscode-markdownlin"
+				"davidanson.vscode-markdownlin",
+				"yzhang.markdown-all-in-one",
+				"usernamehw.errorlens",
+				"streetsidesoftware.code-spell-checker",
+				"esbenp.prettier-vscode"
 			]
 		}
 	},
