@@ -8,3 +8,5 @@ https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare - setup
 
 setup dev container for use locally and codespaces
 https://renatogolia.com/2020/10/10/creating-this-blog-editor/
+
+adding something to test commit
